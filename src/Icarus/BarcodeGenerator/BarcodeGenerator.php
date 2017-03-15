@@ -40,6 +40,15 @@ class BarcodeGenerator
 
 
 
+    public function output($text)
+    {
+        header('Content-type: image/png');
+        echo $this->generate($text, false);
+        exit;
+    }
+
+
+
     /**
      * @param $text
      * @param bool $encode
@@ -52,7 +61,7 @@ class BarcodeGenerator
         $data = ob_get_contents();
         ob_end_clean();
         if ($encode) {
-            $data = base64_encode($data);
+            $data = "data:image/png;base64," . base64_encode($data);
         }
         return $data;
     }
