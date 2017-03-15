@@ -1,0 +1,34 @@
+{
+  "name": "icarus/barcode-generator",
+  "type": "library",
+  "description": "",
+  "keywords": [
+    "barcode",
+    "generator"
+  ],
+  "license": [
+    "MIT"
+  ],
+  "support": {
+    "issues": "https://github.com/MadeByIcarus/BarcodeGenerator/issues"
+  },
+  "authors": [
+    {
+      "name": "David S. Tufts",
+      "description": "Author of the core function barcode(). "
+    },
+    {
+      "name": "Pavel Gajdoš"
+    }
+  ],
+  "autoload": {
+    "classmap": [
+      "src"
+    ]
+  },
+  "autoload-dev": {
+  },
+  "require": {
+    "php": ">=5.6"
+  }
+}
